@@ -1,0 +1,14 @@
+name: CI
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: checkout repository
+      uses: actions/ckecout@v2
+
+    - name: run a one-line script
+      run: echo "Hello, Richard"
